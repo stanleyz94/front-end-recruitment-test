@@ -1,0 +1,31 @@
+$tablet: 768px;
+
+@mixin md {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.75rem;
+  @include md {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  &__content-grid {
+    grid-column: span 2 / span 2;
+  }
+  &__sidebar-grid {
+    margin-top: 3.125rem;
+  }
+  &-result {
+    text-align: center;
+    padding: 40px;
+    font-size: 32px;
+  }
+}
+
+.hidden {
+  display: none;
+}

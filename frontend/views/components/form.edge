@@ -1,0 +1,133 @@
+
+
+<div class="checkout">
+
+  <div class="checkout__content-grid">
+    <form id="form">
+      <fieldset>
+        <legend>
+          <div class="legend__circle">1</div>
+          Personal Information
+        </legend>
+        <div class="flex-container">
+          <div class="form-control">
+            <label for="firstName">First Name</label>
+            <input class="form__input" type="text" placeholder="Elon" name="firstName" id="firstName"> 
+            <small class="form__error hidden">First name is invalid</small> 
+          </div>
+          <div class="form-control">
+            <label for="lastName">Last Name</label>
+            <input class="form__input" type="text" placeholder="Musk" id="lastName" name="lastName"> 
+            <small class="form__error hidden">Last name is invalid</small> 
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input class="form__input" type="email" placeholder="elon@spacex.com" id="email" name="email"> 
+            <small class="form__error hidden">Email is invalid</small> 
+          </div>
+        </div>
+  
+        <div class="flex-container">
+          <div class="form-control">
+            <label for="country" class="form__label">Country</label>
+          <select class="form__select" name="country" id="country">
+            <option value="USA">United States</option>
+            <option value="PL">Poland</option>
+            <option value="JP">Japan</option>
+          </select>
+            <span class="select__icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+  
+          </div>
+          <div class="form-control">
+            <label for="postalCode">Postal Code</label>
+            <input class="form__input" type="text" placeholder="10001"  maxlength="5" name="postalCode" id="postalCode"> 
+            <small class="form__error hidden">Postal code is invalid</small> 
+          </div>        
+        </div>
+
+        <div class="flex-container">
+          <div class="form-control">
+            <label for="phone">Phone Number</label>
+            <input class="form__input"  type="tel" placeholder="(212) 692-93-92"  maxlength="9" name="phone" id="phone"> 
+            <small class="form__error hidden">Phone number is invalid</small> 
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <div class="legend__circle">2</div>
+              Payment Details
+              <span class="legend__icon"><svg  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></span>
+        </legend>
+        <div class="flex-container">
+          <div class="form-control">
+            <label for="creditCard">Credit Card Number</label>
+            <input class="form__input" id="creditCard" name="creditCard" inputmode="numeric"  placeholder="0000 - 0000 - 0000 - 0000"   maxlength="16" autocomplete="cc-number"> 
+            <span class="form__card"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><style>.st0{fill:#0072ff}</style><g id="Layer_2"><path class="st0" d="M27.1 24.1l-2.6 15.8h4.1l2.6-15.8h-4.1zM50.8 24.1c-1 0-1.7.3-2.1 1.3L42.6 40h4.3s.7-2 .9-2.4H53c.1.6.5 2.4.5 2.4h3.8L54 24.1h-3.2zm-1.9 10.2c.3-.9 1.6-4.4 1.6-4.4l.5-1.5.3 1.4s.8 3.8 1 4.6h-3.4zM39.4 30.5c-1.4-.7-2.3-1.2-2.3-2 0-.7.7-1.4 2.3-1.4 1.3 0 2.3.3 3.1.6l.4.2.6-3.4c-.8-.3-2.1-.7-3.7-.7-4 0-6.9 2.2-6.9 5.2 0 2.3 2 3.6 3.6 4.3 1.6.8 2.1 1.3 2.1 2 0 1.1-1.3 1.5-2.5 1.5-1.6 0-2.5-.2-3.9-.8l-.5-.3-.6 3.5c1 .4 2.7.8 4.6.8 4.3 0 7.1-2.1 7.1-5.4.1-1.6-1-3-3.4-4.1zM21.1 24.1l-4 10.8-.4-2.2-1.4-7.3c-.2-1-1-1.3-1.9-1.3H6.9c-.1 0-.1.1-.2.1 0 .1 0 .2.1.2 1 .3 1.9.6 2.7 1 .9.4 1.5 1.2 1.8 2.1l3.3 12.4h4.3l6.4-15.8h-4.2z"/></g></svg></span>
+            <small class="form__error hidden">Credit Card Number is invalid</small> 
+          </div>
+        </div>
+        
+        <div class="flex-container">
+          <div class="form-control">
+            <label for="CVV">Security Code</label>
+            <input class="form__input" id="CVV" name="CVV" placeholder="***"  autocomplete="cc-csc" inputmode="numeric" maxlength="3" > 
+            <span class="form__question"><svg  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></span>
+            <small class="form__error hidden">Security Code is invalid</small> 
+          </div>
+          <div class="form-control">
+            <label for="expDate">Expiration date</label>
+            <input class="form__input"  placeholder="MM / YY" id="expDate" name="expDate" autocomplete="cc-exp" maxlength="5"  > 
+            <small class="form__error hidden">Expiration date is invalid</small> 
+          </div>
+        </div>
+      </fieldset>
+      <button class="form__submit"><span class="submit__icon"><svg  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></span>Complete Purchase</button>
+    </form>
+  </div>
+  <div class="checkout__sidebar-grid">
+    <div class="order-summary">
+      <table>
+        <thead>
+          <tr>
+            <th class="order-summary__heading">Your Order</th>
+          </tr>
+        </thead>
+        <tbody class="order-summary__body">
+          <tr>
+            <td class="order-summary__cell">Apple Watch Sport</td>
+            <td class="order-summary__cell order-summary__cell--price">$580</td>
+          </tr>
+    
+          <tr>
+            <td class="order-summary__cell">Modern Buckle</td>
+            <td class="order-summary__cell order-summary__cell--price">$380</td>
+          </tr>
+        </tbody>
+      
+        <tbody class="order-summary__body">
+          <tr>
+            <td class="order-summary__cell">Total purchases</td>
+            <td class="order-summary__cell order-summary__cell--price">$ 960.00</td>
+          </tr>
+          <tr>
+            <td class="order-summary__cell">Estimated Max</td>
+            <td class="order-summary__cell order-summary__cell--price">$ 0
+            
+            </td>
+    
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="order-summary__cell">Total</td>
+            <td class="order-summary__cell order-summary__cell--total">$ 960</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>  
+
